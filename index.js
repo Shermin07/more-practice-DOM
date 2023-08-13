@@ -35,6 +35,15 @@ for(const nam of names){
     nam.style.color = "tomato";
 }
 
+// getting text::
+const div = document.querySelector("#my-div");
+const text1 = div.innerText;
+//console.log(text1);
+
+//getting HTML:::
+const html = document.getElementById("my-div");
+//console.log(html);
+
 
 
 
