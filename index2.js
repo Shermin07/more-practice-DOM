@@ -55,4 +55,23 @@ document.getElementById("btn-one").addEventListener('click', function(){
     input1.value = " ";
 })
 
+//  button press and and textarea writting para add  :::
+
+document.getElementById("btn-fishy").addEventListener('click',function(){
+
+    const textArea = document.getElementById("text-area");
+    const area = textArea.value;
+
+    const div1 = document.getElementById("fishy-div");
+
+    const p = document.createElement('p');
+    p.innerText = area;
+
+    div1.appendChild(p);
+
+    textArea.value = " ";
+
+
+})
+
 
