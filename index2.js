@@ -36,5 +36,23 @@ document.getElementById("btn-grey").addEventListener('click', function makeGrey(
     document.body.style.backgroundColor = "grey";
 })
 
+//button press and paragraph change-->
+
+//document.getElementById("btn-one").addEventListener('click', function(){
+    //const p = document.getElementById("para");
+   // p.innerText = "I am trying to do something";
+
+//})
+
+// button press and input likhle and para change::::
+document.getElementById("btn-one").addEventListener('click', function(){
+   
+    const input1 = document.getElementById("input-one");
+    const inputText = input1.value;
+
+    const p1 = document.getElementById("para");
+    p1.innerText = inputText;
+    input1.value = " ";
+})
 
 
