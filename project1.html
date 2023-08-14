@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tasbih</title>
+</head>
+<body>
+    <section>
+<h1 class="title  "  style="text-align: center;"  >Welcome to my awesome counting App</h1>
+<div class="text-center" style="text-align: center; margin-right: 10px;"  >
+
+    <h1 id="count">0</h1>
+    <button id="plus-button" class="btn btn-primary" onclick=" increment()"  style="margin-right: 40px;">+</button>
+    <button id="minus-button" class="btn btn-primary" onclick="">-</button>
+
+</div>
+
+    </section>
+ 
+    
+
+    <script>
+     const title =   document.querySelector(".title");
+     title.style.color = "tomato";
+
+        const plusButton = document.getElementById("plus-button");
+      let count = 0;
+
+      function increment(){
+        const element = document.getElementById("count");
+        element.style.color = "red";
+
+        count++;
+
+        element.innerText = count;
+      }
+
+     document.getElementById("minus-button").addEventListener('click', function(){
+        const decrement = document.getElementById("count");
+
+        count--;
+        decrement.innerText = count;
+
+        decrement.style.color = "green";
+
+     })
+    </script>
+</body>
+</html>
